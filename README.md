@@ -2,7 +2,7 @@
 
 🚧 Under construction... 🚧
 
-This repo contains code and data for our paper (Bias Amplification in Stable Diffusion’s Representation of Stigma Through Skin Tones and Their Homogeneity)[https://arxiv.org/abs/2508.17465].
+This repo contains code and data for our paper [Bias Amplification in Stable Diffusion’s Representation of Stigma Through Skin Tones and Their Homogeneity](https://arxiv.org/abs/2508.17465) published at AIES 2025.
 
 If you found this helpful, you can cite our work with the following information:
 ```
