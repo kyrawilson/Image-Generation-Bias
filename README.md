@@ -8,6 +8,18 @@ This repo contains code and data for our paper [Bias Amplification in Stable Dif
 
 ### Experiment 1
 
+To extract skin tone regions from generated images of faces, run the script ```masks.py``` (adapted from [Or-El et al. 2020's implementation](https://github.com/stupidcucumber/DeepLabV3-CelebHQ/blob/main/eval.py)).
+
+```
+python masks.py 
+
+options:
+  -m, --model           Name of T2I model
+  -i, --images-dir      Path to the folder of generated images
+  -a, --masks-dir       Path to the folder of masks
+  -r, --results-dir     Path to save results
+```
+
 Run the script ```skin_tones.py``` (adapted from [Thong et al. (2023)'s implementation](https://github.com/SonyResearch/apparent_skincolor/blob/main/extract/predict.py)) to calculate luminance (_L*_) and hue (_h*_) for generated images. 
 
 ```
