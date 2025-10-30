@@ -16,7 +16,7 @@ python skin_tones.py -m 'SDXL' -i 'data/images/SDXL' -a 'data/masks/SDXL' -r 'da
 options:
   -m, --model           Name of T2I model
   -i, --images-dir      Path to the folder of generated images
-  -a, --masks-dir       Path to save skin tone masks
+  -a, --masks-dir       Path to the folder of masks
   -r, --results-dir     Path to save results
 ```
 
