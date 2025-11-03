@@ -11,7 +11,7 @@ This repo contains code and data for our paper [Bias Amplification in Stable Dif
 To extract skin tone regions from generated images of faces, run the script ```masks.py``` (adapted from [Or-El et al. 2020's implementation](https://github.com/stupidcucumber/DeepLabV3-CelebHQ/blob/main/eval.py)). We also use Or-El et al. 2020's [model](https://drive.google.com/file/d/1YR4LTi-CIYl8zr7JmtJj5jcrpdsJx9Nd/view?usp=share_link) and [color map] (https://github.com/stupidcucumber/DeepLabV3-CelebHQ/blob/main/example/color_mapping.json) and the mapping from the original [CelebAMask-HQ dataset](https://github.com/switchablenorms/CelebAMask-HQ?tab=readme-ov-file).
 
 ```
-python masks.py 
+python masks.py --mapping mapping.json --model best_weights.pt -cmap color_mapping.json -i data/images/SDXL -a data/masks/SDXL
 
 options:
   --mapping             Path to the mapping
@@ -24,7 +24,7 @@ options:
 Run the script ```skin_tones.py``` (adapted from [Thong et al. (2023)'s implementation](https://github.com/SonyResearch/apparent_skincolor/blob/main/extract/predict.py)) to calculate luminance (_L*_) and hue (_h*_) for generated images. 
 
 ```
-python skin_tones.py -m 'SDXL' -i 'data/images/SDXL' -a 'data/masks/SDXL' -r 'data/results'
+python skin_tones.py -m SDXL -i data/images/SDXL -a data/masks/SDXL -r data/results
 
 options:
   -m, --model           Name of T2I model
