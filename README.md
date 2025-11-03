@@ -6,7 +6,7 @@ This repo contains code and data for our paper [Bias Amplification in Stable Dif
 
 ---
 
-### Experiment 1
+### Skin Tone Features
 
 To extract skin tone regions from generated images of faces, run the script ```masks.py``` (adapted from [Or-El et al. 2020's implementation](https://github.com/stupidcucumber/DeepLabV3-CelebHQ/blob/main/eval.py)). We also use Or-El et al. 2020's [model](https://drive.google.com/file/d/1YR4LTi-CIYl8zr7JmtJj5jcrpdsJx9Nd/view?usp=share_link) and [color map](https://github.com/stupidcucumber/DeepLabV3-CelebHQ/blob/main/example/color_mapping.json) and the mapping from the original [CelebAMask-HQ dataset](https://github.com/switchablenorms/CelebAMask-HQ?tab=readme-ov-file).
 
@@ -33,15 +33,11 @@ options:
   -r, --results-dir     Path to save results
 ```
 
-### Experiment 2
+### Experiments
 
 For human face datasets, we use the results of skin tone analysis provided by Thong et al. (2023) available in their [project repository](https://github.com/SonyResearch/apparent_skincolor/blob/main/extract/results). 
 
-### Experiment 3
-
 _Calculating delta E..._
-
-### Experiment 4
 
 _Case study of stigmatized racial identities..._
 
