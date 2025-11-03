@@ -8,7 +8,7 @@ This repo contains code and data for our paper [Bias Amplification in Stable Dif
 
 ### Experiment 1
 
-To extract skin tone regions from generated images of faces, run the script ```masks.py``` (adapted from [Or-El et al. 2020's implementation](https://github.com/stupidcucumber/DeepLabV3-CelebHQ/blob/main/eval.py)). We also use Or-El et al. 2020's [model](https://drive.google.com/file/d/1YR4LTi-CIYl8zr7JmtJj5jcrpdsJx9Nd/view?usp=share_link) and [color map] (https://github.com/stupidcucumber/DeepLabV3-CelebHQ/blob/main/example/color_mapping.json) and the mapping from the original [CelebAMask-HQ dataset](https://github.com/switchablenorms/CelebAMask-HQ?tab=readme-ov-file).
+To extract skin tone regions from generated images of faces, run the script ```masks.py``` (adapted from [Or-El et al. 2020's implementation](https://github.com/stupidcucumber/DeepLabV3-CelebHQ/blob/main/eval.py)). We also use Or-El et al. 2020's [model](https://drive.google.com/file/d/1YR4LTi-CIYl8zr7JmtJj5jcrpdsJx9Nd/view?usp=share_link) and [color map](https://github.com/stupidcucumber/DeepLabV3-CelebHQ/blob/main/example/color_mapping.json) and the mapping from the original [CelebAMask-HQ dataset](https://github.com/switchablenorms/CelebAMask-HQ?tab=readme-ov-file).
 
 ```
 python masks.py --mapping mapping.json --model best_weights.pt -cmap color_mapping.json -i data/images/SDXL -a data/masks/SDXL
